@@ -1,4 +1,97 @@
-body {
-  margin: 0;
+body .jumbotron {
+  position: center;
+  width: 60%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.currentConversation {
+  position: center;
+  margin-left: 120px;
+  padding: 15px;
+  background-color: white;
+  width: 85%;
+  min-height: 300px;
+  border-bottom: 2px solid gray;
+  border-radius: 10px
+}
+
+.personOne {
+  width: fit-content;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.personTwo {
+  border-radius: 25px;
+  background: lightblue;
+  text-align: center;
+  padding: 5px;
+  float: right;
+}
+
+.contacts {
+  width: 120px;
+  padding: 5px;
+  border: solid gray;
+  border-width: 0px 2px 2px 0px;
+  border-radius: 10px;
+  background: white;
+  float: left;
+  min-height: 300px;
+}
+
+.sendMessage {
+  margin: 2px 0px 2px 120px
+}
+
+
+/*//////////////////// No Bootstrap //////////////////////*/
+
+
+/* body {
+  margin: 3px;
   padding: 0;
 }
+
+.interface {
+  position: relative;
+  height: 200px;
+  width: 50%;
+  border: 3px solid gray;
+}
+
+.currentConversation {
+  margin: 3px;
+}
+
+.textInput {
+  border-top: 1px solid gray;
+  width: 70%;
+  margin-left: 30%;
+}
+
+.textInput {
+  position: absolute;
+  bottom: 0;
+}
+
+.sessions {
+  float: left;
+  height: 200px;
+  border-width: 0px 3px;
+  border-style: solid;
+  border-color: gray;
+  width: 15%;
+}
+
+.sessions ul {
+  list-style: none;
+}
+
+.search {
+  width: 96%;
+  border-bottom: 3px solid gray;
+} */
