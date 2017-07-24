@@ -2,46 +2,44 @@
 <html lang="en">
 
 <head>
-    <title>Airwave Chat</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Airwave Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/81df9ad362.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="jumbotron">
-
-        <div class="contacts">
-            <input class="form-control input-sm searchContacts" placeholder="Search ya Boi's"></input>
-            <div class="contactList">
-                <p>- James <br>- Harrison <br>- Riley <br>- Jake <br>- Westy </p>
-            </div>
-        </div>
-
-        <div class="currentConversation">
-            <div class="personOne">
-                how can the first message be "back"
-            </div>
-            <div class="personTwo">
-                and the responce be "fourth"
-            </div>
-
-        </div>
-
-
-        <form class="form-horizontal sendMessage">
-            <div class="form-group">
-                <div class="col-sm-10">
-                    <input type="text" class="form-control textInput" placeholder="Talk to ya Boi's">
-                </div>
-                <button for="inputPassword" class="btn btn-info sendButton">For The Boi's</button>
-            </div>
-        </form>
+  <aside class="sidebar"></aside>
+  <main id="app">
+    <div class="conversation-head">
+      <div class="user-listing">
+        <i class="user-icon fa fa-user-circle"></i>
+        <p> Greg Dwyer </p>
+      </div>
     </div>
 
-    <script src="index.js"></script>
+    <section class="chat-window">
+      <div class="message message-own">
+        Hey dude
+      </div>
+
+      <div class="message">
+        sup bro
+      </div>
+    </section>
+
+    <div class="chat-input-container">
+      <input type="text" class="chat-input" name="chat-input" placeholder="Type a message here">
+      <button class="send-message">
+        <i class="fa fa-paper-plane"></i>
+      </button>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

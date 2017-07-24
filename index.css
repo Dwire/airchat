@@ -1,97 +1,81 @@
-body .jumbotron {
-  position: center;
-  width: 60%;
-  padding: 5px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.currentConversation {
-  position: center;
-  margin-left: 120px;
-  padding: 15px;
-  background-color: white;
-  width: 85%;
-  min-height: 300px;
-  border-bottom: 2px solid gray;
-  border-radius: 10px
-}
-
-.personOne {
-  width: fit-content;
-  border-radius: 25px;
-  padding: 5px;
-  background-color: lightgray;
-}
-
-.personTwo {
-  border-radius: 25px;
-  background: lightblue;
-  text-align: center;
-  padding: 5px;
-  float: right;
-}
-
-.contacts {
-  width: 120px;
-  padding: 5px;
-  border: solid gray;
-  border-width: 0px 2px 2px 0px;
-  border-radius: 10px;
-  background: white;
-  float: left;
-  min-height: 300px;
-}
-
-.sendMessage {
-  margin: 2px 0px 2px 120px
-}
-
-
-/*//////////////////// No Bootstrap //////////////////////*/
-
-
-/* body {
-  margin: 3px;
+html, body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
-.interface {
-  position: relative;
-  height: 200px;
-  width: 50%;
-  border: 3px solid gray;
+.sidebar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #4A92C9;
 }
 
-.currentConversation {
-  margin: 3px;
+main#app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 300px;
 }
 
-.textInput {
-  border-top: 1px solid gray;
-  width: 70%;
-  margin-left: 30%;
+.conversation-head {
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+.user-listing {
+  display: flex;
+}
+.user-icon {
+  font-size: 35px;
+  line-height: 49px;
+  margin-right: 15px;
 }
 
-.textInput {
-  position: absolute;
-  bottom: 0;
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  overflow-y: scroll;
+  height: 90%;
+  background-color: #F6F6F6;
 }
 
-.sessions {
-  float: left;
-  height: 200px;
-  border-width: 0px 3px;
-  border-style: solid;
-  border-color: gray;
-  width: 15%;
+.chat-input-container {
+  display: flex;
+  height: 45px;
+}
+.chat-input-container input {
+  width: 90%;
+  border: none;
+  padding-left: 15px;
+  font-size: 15px;
+}
+.chat-input-container input::placeholder {
+  font-size: 15px;
+}
+.chat-input-container button:focus, input:focus {
+  outline: none;
+}
+.chat-input-container button {
+  width: 10%;
+  font-size: 20px;
+  color: #4A92C9;
+  border: none;
+  background-color: white;
+  cursor: pointer;
 }
 
-.sessions ul {
-  list-style: none;
+.message {
+  align-self: flex-start;
+  padding:  10px;
+  margin: 2px;
+  width: fit-content;
+  background-color: #E5E4E5;
 }
-
-.search {
-  width: 96%;
-  border-bottom: 3px solid gray;
-} */
+.message.message-own {
+  align-self: flex-end;
+  background-color: #4A92C9;
+}
