@@ -9,9 +9,10 @@ html, body {
 
 .sidebar {
   position: fixed;
+  background-color: #4A92C9;
   width: 300px;
   height: 100%;
-  background-color: #4A92C9;
+  border-right: 2px solid gray;
 }
 
 main#app {
@@ -73,9 +74,90 @@ main#app {
   padding:  10px;
   margin: 2px;
   width: fit-content;
-  background-color: #E5E4E5;
+  background-color: #E4E3E3;
 }
 .message.message-own {
   align-self: flex-end;
   background-color: #4A92C9;
 }
+
+/* below style for sidebar */
+
+.sidebar-input-container {
+  display: flex;
+  height: 45px;
+  border-bottom: 1px solid grey;
+}
+.sidebar-input-container input {
+  width: 90%;
+  border: none;
+  background-color: #E4E3E3;
+  padding-left: 15px;
+  font-size: 15px;
+}
+  .sidebar-input-container input::placeholder {
+  font-size: 15px;
+} 
+.sidebar-input-container button:focus, input:focus {
+  outline: none;
+}
+ .sidebar-input-container button {
+  width: 10%;
+  font-size: 20px;
+  color: #4A92C9;
+  border: none;
+  padding-right: 30px;
+  background-color: #E4E3E3;
+  cursor: pointer;
+}  
+
+
+
+
+/* ripping while ripping */
+ .sidebar .title-bar {
+  display: flex;
+  font-family: 'Marck Script', cursive;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+
+
+.fa-fighter-jet:before {
+  line-height: 55px;
+  margin: 0px 10px;
+}
+
+ ul.contact-list {
+   color: lightgrey;
+ }
+
+.contact {
+  display: flex;
+  line-height: 50px;
+  list-style: none;
+  font-size: 18px;
+  padding: 5px; 
+  color: #E4E3E3;
+}  
+  
+.contact button:focus {
+  outline: none;
+}
+
+.contact button {
+  margin-left: auto;
+  font-size: 15px;
+  color: #E4E3E3;
+  border: none;
+  background-color: #4A92C9;
+  cursor: pointer;
+}
+
+ .fa-user-circle:before {
+  margin-right: 15px;
+} 
+
+

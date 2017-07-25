@@ -9,10 +9,39 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
 </head>
 
 <body>
-  <aside class="sidebar"></aside>
+  
+  <aside class="sidebar">
+
+    <div class="title-bar">
+      <i class="fa fa-fighter-jet icon" aria-hidden="true"></i>
+      <p>AirWave Chat</p>
+    </div>
+    
+    <div class="sidebar-input-container"> 
+      <input type="text" name="contacts" placeholder="Add Contacts" id="contact-input">
+      <button class="add-contact-btn" onclick="handlers.addContact()">
+       <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div >
+       <ul class="contact-list">
+          <!-- <li class="contact user-icon fa fa-user-circle">
+            
+              Your next buddy. 
+            <button class="delete-contact-btn">
+              <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+            </button>
+         </li> 
+       -->
+      </ul> 
+    </div>
+  </aside>
+
   <main id="app">
     <div class="conversation-head">
       <div class="user-listing">

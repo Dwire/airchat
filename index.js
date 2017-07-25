@@ -28,7 +28,9 @@
       const messageText = $chatInput.val(),
             messageHtml = newMessage({text: messageText, classNames: 'message-own'});
 
+      if (messageText.length > 0) {
       $chatWindow.append(messageHtml);
+      }
     };
 
     function clearTextInput() {
